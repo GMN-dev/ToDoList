@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+@media screen and (max-width: 650px) {
+body{
+    height: 100vh;
+    background-color: #897853;
+    color: #4E3620;   
+    font-family: "Roboto";
+    display: flex;
+    flex-direction: column;
+}
+main{
+    flex: 1;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+}
+
+h1{
+    margin-bottom: 10px;
+}
+
+/* seção de adição de tarefa */
+.containerInput{
+    width: 85%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.addSection{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 12px 12px 1px 1px #4e362085;
+    border: none;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+
+#task{
+    font-size: 18px;
+    width: 100%;
+    padding: 8px;
+    margin: 15px ;
+    border: none;
+
+}
+
+#addButton{
+    border: none;
+    margin-right: 18px;
+    box-sizing: border-box;
+    background-color:white;
+}
+
+/* caixas de tarefa */
+.containerStatusBoxs{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    
+}
+#inativas, #ativas{
+    background-color: #F8F4E1;
+    width: 80%;
+    height: 220px;
+    margin: 10px 0 10px 0;
+    overflow: auto;
+    border-radius: 10px;
+    padding: 13px;
+    box-shadow: 12px 12px 1px 1px #4e362085;
+}
+#ativas{
+    margin-bottom: 30px;
+    background-color: #C8EED9;;
+}
+#cabecalho{
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}    
+
+footer{
+    flex: 0;
+  background-color: black;
+}
+
+}

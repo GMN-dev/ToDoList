@@ -1,0 +1,11 @@
+#addButton :active{
+  /* position:relative;
+  top:5px; */
+  width: 35px;
+}
+
+/* lista de tarefas adicionadas formatação */
+li{
+  list-style: none;
+  font-size: 25px;
+}
