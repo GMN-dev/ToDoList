@@ -1,97 +1,147 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-*{  box-sizing: border-box;
+*{
+    padding:0;
     margin: 0;
-    padding: 0;
+    box-sizing: border-box;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     outline: 0;
 }
-@media screen and (max-width: 650px) {
 body{
     height: 100vh;
-    background-color: #897853;
-    color: #4E3620;   
-    font-family: "Roboto";
-    display: flex;
-    flex-direction: column;
-}
-main{
-    flex: 1;
-    box-sizing: border-box;
-    margin-bottom: 40px;
-}
-
-h1{
-    margin-bottom: 10px;
-}
-
-/* seção de adição de tarefa */
-.containerInput{
-    width: 85%;
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.addSection{
-    background-color: white;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    box-shadow: 12px 12px 1px 1px #4e362085;
-    border: none;
-    border-radius: 10px;
-    box-sizing: border-box;
+    flex-direction: column;
+    background: linear-gradient(180deg, #820AD1,#8417cc,#9431d6,#9643ce);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
 }
 
-
-#task{
-    font-size: 18px;
-    width: 100%;
-    padding: 8px;
-    margin: 15px ;
-    border: none;
-
-}
-
-#addButton{
-    border: none;
-    margin-right: 18px;
-    box-sizing: border-box;
-    background-color:white;
-}
-
-/* caixas de tarefa */
-.containerStatusBoxs{
+main{
+    flex: 1;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+
+.mainSection{
+    background-color: #820AD1;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0px 7px 18px 3px #401c7a;
+    padding: 9px;
+    width: 90%;
+    margin-bottom: 12px;
     
 }
-#inativas, #ativas{
-    background-color: #F8F4E1;
-    width: 80%;
-    height: 220px;
-    margin: 10px 0 10px 0;
-    overflow: auto;
-    border-radius: 10px;
-    padding: 13px;
-    box-shadow: 12px 12px 1px 1px #4e362085;
-}
-#ativas{
-    margin-bottom: 30px;
-    background-color: #C8EED9;;
-}
-#cabecalho{
-    display: block;
-    text-align: center;
+
+.containerInput{
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px;
     margin-bottom: 10px;
-}    
+    box-shadow: 0px 5px 0px 2px #5727A3;
+}
+
+.containerInput input{
+    color: #4f1e9c;
+    background-color: white;
+    border: none;
+    width: 86%;
+    padding: 5px;
+    font-size: 18px;    
+}
+
+.containerInput button{
+    display: flex;
+    background-color: white;
+    border-radius: 500px;
+    padding: 3px;
+    margin: 8px;
+    box-shadow: 0px 2px 0px 1.5px #5727A3;
+}
+
+
+.mainSection h1{
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 2.5px 3.5px #470772;
+    margin-bottom: 10px;
+    color: white;
+}
+
+
+
+  /* Novas tarefas */
+.containerTarefas{
+    background-color: #820AD1;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0px 10px 15px 3px #401c7a;
+    padding: 9px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+.tarefa{
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0px 5px 0px 2px #5727A3;
+    
+}
+.texto{
+    color: #4f1e9c;
+    background-color: white;
+    border: none;
+    padding: 5px;
+    font-size: 18px; 
+    width: 85%; 
+    overflow-wrap: break-word;
+}
+
+.bordasButton{
+    display: flex;
+    background-color: white;
+    border-radius: 500px;
+    padding: 3px;
+    margin: 8px;
+    box-shadow: 0px 2px 0px 1.5px #5727A3;
+}
+.bordasButton img{
+    width: 26px;
+    margin: 1px;
+    
+}
+
 
 footer{
-    flex: 0;
-  background-color: black;
+    margin-top: 15px;
+    color: white;
 }
-
+.redes img{
+    max-width: 55px;
+ }
+ .redes{
+    min-width: 250px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+a{
+    text-decoration: none;
+    color: white;
 }

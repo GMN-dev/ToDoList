@@ -1,47 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/index.css">
-    <link rel="stylesheet" href="/styles/screen.css">
-    <link rel="stylesheet" href="/styles/hover_exceções.css">
-    <title>Make your Organization</title>
+    <link rel="stylesheet" href="/styles/hovers.css">
+    <title>Lista de Tarefas</title>
 </head>
 <body>
     <main>
-        <div class="containerInput">
-            <h1>Lista de Tarefas</h1>
-            <div class="addSection">
-                <input type="text" id="task" placeholder="Sua tarefa aqui:">
-                <button type="submit" id="addButton" onclick="addingTask()">
-                    <img src="/imgs/redondo(2).png" alt="adcionar" width="40px">
-                </button>
+        <section class="mainSection">
+        <h1>Lista de Tarefas</h1>
+            <div class="containerInput">
+                <input type="text" id="input"><button onclick="criarTarefa()"><img src="/imgs/addfilebutton_87271.ico" width="30" alt=""></button>
             </div>
-        </div>
-        <section class="containerStatusBoxs">
-            <div class="box" id="ativas">
-                <span id="cabecalho"><h3>Tasks ativas</h3></span>
-                <hr>
-                <ul id="listActive" onclick="checkboxFunc(this)"></ul>
-            </div>
-            <div class="box" id="inativas">
-                <span id="cabecalho"><h3>Tasks Finalizadas</h3></span>
-                <hr>
-                <ul id="listInactive"></ul>
+        </section>
+
+        <section class="containerTarefas">
+            <div class="tarefa">
+                <div class="texto">${input.value}</div> 
+                <div>
+                    <button class="bordasButton">
+                        <img src="/imgs/workdone_87219.ico" alt="" width="30">
+                    </button>
+                    <button class="bordasButton">
+                        <img src="/imgs/deletetrashbin_87227.ico" alt="" width="30">
+                    </button>
+                </div>
             </div>
         </section>
     </main>
+    
     <footer>
-
-        <a href="https://icon-icons.com/pt/users/DYODrrTIYaeRY9vez8mKP/icon-sets/">Icones</a>
-        <a href="https://www.flaticon.com/free-icons/add" title="add icons">Add icons created by Freepik - Flaticon</a>
-        <p>Desenvolvido por Gabriel M. Nascimento</p>
-        <p>Email: g.magalhaes.dev@gmail.com</p>
-        <p><a href="#">Linkedin</a></p>
-        <p><a href="#">Github</a></p>
+        <div> Email: <a href="mailto:g.magalhaes.dev@gmail.com">g.magalhaes.dev@gmail.com</a></div>
+        <div>Créditos de imagens:</div>
+        <div>redes: 
+            <ul class="redes">    
+                <li><a href="https://www.linkedin.com/in/gabriel-magalhães-b98a341ab/"><img src="/imgs/linkin_logo_icon_154491.png" alt=""></a></li>
+                <li><a href="https://github.com/GMN-dev"><img src="/imgs/github_logo_icon_154464.png" alt=""></a></li>
+                <li><a href="https://www.instagram.com/g.magalhaes.dev/"><img src="/imgs/instagram_logo_icon_154475.png" alt=""></a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100076451033010"><img src="/imgs/facebook_logo_icon_154505.png" alt=""></a></li>
+            </ul>
+        </div>
+        
     </footer>
     <script src="/scripts/index.js"></script>
+    
 </body>
 </html>

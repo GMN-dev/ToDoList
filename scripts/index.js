@@ -1,17 +1,17 @@
-let d = document;
-let caixaAtiva = d.getElementById("ativas");
-let listaTasks = d.getElementsByTagName('ul')[0];
+function criarTarefa(){
+    let input = document.getElementById('input');
+    let listaTarefas = document.getElementsByClassName('containerTarefas')[0];
+    let tag = `<div class="tarefa">
+    <div class="texto">${input.value}</div> 
+    <div>
+        <button class="bordasButton">
+            <img src="/imgs/workdone_87219.ico" alt="" width="30">
+        </button>
+        <button class="bordasButton">
+            <img src="/imgs/deletetrashbin_87227.ico" alt="" width="30">
+        </button>
+    </div>
+</div>`
 
-function checkboxFunc(list){
-    console.log(list.children);
-}
-
-function addingTask(){
-    let task = d.getElementById('task');
-    let topic =  `<li><input type="checkbox"> ${task.value}</li>`;
-    
-    caixaAtiva.innerHTML += topic;
-    
-}
-
-
+    listaTarefas.innerHTML += tag;
+} 

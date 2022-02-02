@@ -1,0 +1,11 @@
+.bordasButton:active{
+    position: relative;
+    top: 2px;
+    box-shadow: none;
+}
+
+.containerInput button:active{
+    position: relative;
+    top: 2px;
+    box-shadow: none;   
+}
